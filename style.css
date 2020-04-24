@@ -1,6 +1,6 @@
 
 body,html {
-    background-color: black;
+    background-color: grey;
     font-family: monospace;
     width: 100%;
     height: 100%;
@@ -8,8 +8,26 @@ body,html {
     padding: 0;
 
 }
-h6 {
+#container {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     color: white;
-    font-size: 12px;
-    text-align: center;
+}
+#title {
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 80px;
+    font-family: 'Montserrat';
+   
+}
+#links{
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
 }
