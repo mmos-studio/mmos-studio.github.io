@@ -1,8 +1,28 @@
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url(https://fonts.google.com/specimen/Montserrat?query=montserrat);
+    font-family: 'MontserratBold';
+    src: url(./fonts/Montserrat-Bold.ttf);
 }
+@font-face{
+        font-family: 'MontserratRegular';
+        src: url(./fonts/Montserrat-Regular.ttf);
+    }
+@font-face{
+    font-family: 'MontserratBlack';
+    src: url(./fonts/Montserrat-Black.ttf);
+
+}
+@font-face{
+    font-family: 'RobotoRegular';
+    src: url(./fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+    
+    font-family: 'RobotoBold';
+    src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
+    
+
 body,html {
     background-color: grey;
     font-family: monospace;
@@ -25,13 +45,64 @@ body,html {
     padding: 0;
     margin: 0;
     display: block;
-    font-size: 80px;
-    font-family: 'Montserrat';
+    font-size: 2.4vw;
+    font-family: 'MontserratBold';
+    position: relative;
+    left: 3.8%;
+    top: 6%;
    
 }
+#navigation{
+    display: block;
+    position: relative;
+}
 #links{
-    list-style: none;
-    font-size: 20px;
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    position: relative;
+    float: left;
+    left: 65%;
+    top:6%
 }
+ul#links li {
+    float: left;
+}
+ul#links li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'MontserratBold';
+    font-size: 1.2vw;
+}
+#fraseContainer {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+#mainFrase{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    font-family: 'MontserratBlack';
+    text-align: left;
+    font-size: 7.2vw;
+    top:15%;
+    left: 5%;
+    
+    
+
+}
+#autorFrase{
+    display: inline-block;
+    position: relative;
+    font-family: 'MontserratRegular';
+    font-size: 2.2vw;
+}
+
