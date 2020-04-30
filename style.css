@@ -32,6 +32,16 @@ body,html {
     padding: 0;
 
 }
+.logoSlide {
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    background-image:url("logo_v4.png");
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center;
+    position: relative;
+}
 #container {
     background-color: black;
     padding: 0;
