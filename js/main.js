@@ -5,14 +5,23 @@ import { GLTFLoader } from './Threejs/jsm/loaders/GLTFLoader.js';
 import { RGBELoader } from './Threejs/jsm/loaders/RGBELoader.js';
 import { RoughnessMipmapper } from './Threejs/jsm/utils/RoughnessMipmapper.js';
 
-var container, controls,logoSlide;
+var threeCont, controls,logoSlide;
 var camera, scene, renderer;
 
 
  init();
-// render();
+ render();
 
  function init() {
+    var title = document.createElement('div');
+    title.setAttribute("id","title");
+    document.getElementById('container').appendChild(title);
+    title.innerHTML = "MMOS";
+    
+    threeCont = document.createElement( 'div' );
+     document.getElementById('container').appendChild( threeCont );
+     threeCont.classList.add('threeCont');
+     threeCont.setAttribute("id","container-canvas");
 
     var logoSlide = document.createElement('div');
     logoSlide.classList.add('logoSlide');
@@ -32,6 +41,7 @@ var camera, scene, renderer;
     workLink.innerHTML = "WORK";
     document.getElementById('contactLink').appendChild(contactLink);
     contactLink.innerHTML = "CONTACT";
+
     
     var tl = anime.timeline({
         easing: 'easeOutExpo',
@@ -60,97 +70,99 @@ var camera, scene, renderer;
    
     
 
-//     container = document.createElement( 'div' );
-//     document.body.appendChild( container );
+    var container = document.getElementById('container-canvas');
+    var h = container.offsetHeight;
+    var w = container.offsetWidth;
 
-//     camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
-//     camera.position.set( - 1.8, 0.6, 2.7 );
+    camera = new THREE.PerspectiveCamera( 45,  w / h, 0.25, 20 );
+    camera.position.set( - 8, 0.6, 2.7 );
 
-//     scene = new THREE.Scene();
+    scene = new THREE.Scene();
 
-//     new RGBELoader()
-//         .setDataType( THREE.UnsignedByteType )
-//         .setPath( './models/Textures/' )
-//         .load( 'Energy_env.hdr', function ( texture ) {
+    new RGBELoader()
+        .setDataType( THREE.UnsignedByteType )
+        .setPath( './models/Textures/' )
+        .load( 'Energy_env.hdr', function ( texture ) {
 
-//             var envMap = pmremGenerator.fromEquirectangular( texture ).texture;
+            var envMap = pmremGenerator.fromEquirectangular( texture ).texture;
 
-//             scene.background = envMap;
-//             scene.environment = envMap;
+            scene.background = envMap;
+            scene.environment = envMap;
 
-//             texture.dispose();
-//             pmremGenerator.dispose();
+            texture.dispose();
+            pmremGenerator.dispose();
 
-//             render();
+            render();
 
-//             // model
+            // model
 
-//             // use of RoughnessMipmapper is optional
-//             var roughnessMipmapper = new RoughnessMipmapper( renderer );
+            // use of RoughnessMipmapper is optional
+            var roughnessMipmapper = new RoughnessMipmapper( renderer );
 
-//             var loader = new GLTFLoader().setPath( './models/' );
-//             loader.load( 'EnergyDrink_mmos_V3.gltf', function ( gltf ) {
+            var loader = new GLTFLoader().setPath( './models/' );
+            loader.load( 'EnergyDrink_mmos_V3.gltf', function ( gltf ) {
 
-//                 gltf.scene.traverse( function ( child ) {
+                gltf.scene.traverse( function ( child ) {
 
-//                     if ( child.isMesh ) {
+                    if ( child.isMesh ) {
 
-//                         roughnessMipmapper.generateMipmaps( child.material );
+                        roughnessMipmapper.generateMipmaps( child.material );
 
-//                     }
+                    }
 
-//                 } );
+                } );
 
-//                 scene.add( gltf.scene );
+                scene.add( gltf.scene );
 
-//                 roughnessMipmapper.dispose();
+                roughnessMipmapper.dispose();
 
-//                 render();
+                render();
 
-//             } );
+            } );
 
-//         } );
+        } );
+   
+    renderer = new THREE.WebGLRenderer( { antialias: true } );
+   
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize(w, h );
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 0.8;
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    container.appendChild( renderer.domElement );
 
-//     renderer = new THREE.WebGLRenderer( { antialias: true } );
-//     renderer.setPixelRatio( window.devicePixelRatio );
-//     renderer.setSize( window.innerWidth, window.innerHeight );
-//     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-//     renderer.toneMappingExposure = 0.8;
-//     renderer.outputEncoding = THREE.sRGBEncoding;
-//     container.appendChild( renderer.domElement );
+    var pmremGenerator = new THREE.PMREMGenerator( renderer );
+    pmremGenerator.compileEquirectangularShader();
 
-//     var pmremGenerator = new THREE.PMREMGenerator( renderer );
-//     pmremGenerator.compileEquirectangularShader();
+    controls = new OrbitControls( camera, renderer.domElement );
+    controls.addEventListener( 'change', render ); // use if there is no animation loop
+    controls.minDistance = 2;
+    controls.maxDistance = 10
+    controls.target.set( 0, 0, - 0.2 );
+    controls.update();
 
-//     controls = new OrbitControls( camera, renderer.domElement );
-//     controls.addEventListener( 'change', render ); // use if there is no animation loop
-//     controls.minDistance = 2;
-//     controls.maxDistance = 10
-//     controls.target.set( 0, 0, - 0.2 );
-//     controls.update();
+    window.addEventListener( 'resize', onWindowResize, false );
 
-//     window.addEventListener( 'resize', onWindowResize, false );
+ }
+
+function onWindowResize() {
+
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(w, h );
+
+    render();
 
 }
 
-// function onWindowResize() {
 
-//     camera.aspect = window.innerWidth / window.innerHeight;
-//     camera.updateProjectionMatrix();
 
-//     renderer.setSize( window.innerWidth, window.innerHeight );
+ function render() {
 
-//     render();
+     renderer.render( scene, camera );
 
-// }
-
-// //
-
-// function render() {
-
-//     renderer.render( scene, camera );
-
-// }
+ }
 
 
         
