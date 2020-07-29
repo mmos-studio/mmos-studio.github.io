@@ -24,105 +24,84 @@
     
 
 body,html {
-    background-color: grey;
+    background-color: black;
     font-family: monospace;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: none;
 
 }
-.logoSlide {
-    width: 100%;
-    height: 100%;
-    background-color:black;
-    background-image:url("logo_v4.png");
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: center;
-    position: absolute;
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    top: 0px;
-}
+
 #container {
     background-color: black;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 100%; 
     height: 100%;
-    overflow: hidden;
-    color: white;
-}
-#title {
-    padding: 0;
-    margin: 0;
-    display: block;
-    font-size: 2.4vw;
-    font-family: 'MontserratBold';
-    position: relative;
-    left: 3.8%;
-    width: 90px;
    
-}
-#links{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    float: left;
-    left: 65%;
-    top:6%
-}
-ul#links li {
-    float: left;
-}
-ul#links li a {
-    display: inline-block;
     color: white;
+}
+#seccion1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+width: 100%;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background-color: teal;
+}
+#menu{
+   
+    position: absolute;
+width: 95px;
+height: 100px;
+left: 1278px;
+top: 60px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: right;
+
+color: #FFFFFF;
+list-style: none;
+}
+
+#logoContainer {
+    position: absolute;
+    width: 720px;
+    height: 595px;
+    left: 370px;
+    top: 196px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'MontserratBold';
-    font-size: 1.2vw;
+    background-color: cadetblue;
+    object-fit: cover;
+ 
 }
-.threeCont {
-    background-color: tomato;
-    width: 90%;
-    height: 60%;
-    margin: 0 auto;
-    position: relative;
-    top: 15%;
-    
+#logoContainer img {
+    background-image: url(./photos/logo_v4.png);
+   width: 100%;
 }
-#fraseContainer {
-    position: fixed;
-    top: 50%;
+
+#seccion2{
+    position: absolute;
     width: 100%;
-    height: 50%;
-    margin: 0;
-    padding: 0;
+    height: 1024px;
+    left: 0px;
+    top: 1024px;
+    background-color: thistle;
 }
-#mainFrase{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    position: relative;
-    font-family: 'MontserratBlack';
-    text-align: left;
-    font-size: 7.2vw;
-    top:15%;
-    left: 5%;
-    
-    
-
+#seccion3 {
+    position: absolute;
+    width: 100%;
+    height: 1024px;
+    left: 0px;
+    top: 2048px;
+    background-color: wheat;
 }
-#autorFrase{
-    display: inline-block;
-    position: relative;
-    font-family: 'MontserratRegular';
-    font-size: 2.2vw;
-}
-
