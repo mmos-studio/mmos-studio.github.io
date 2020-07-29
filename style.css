@@ -31,6 +31,7 @@ body,html {
     margin: 0;
     padding: 0;
     overflow: none;
+    overflow-x:hidden ;
 
 }
 
@@ -40,53 +41,52 @@ body,html {
     margin: 0;
     width: 100%; 
     height: 100%;
-   
+   overflow: hidden;
     color: white;
 }
 #seccion1{
     margin: 0;
     padding: 0;
     position: absolute;
-width: 100%;
-height: 1024px;
-left: 0px;
-top: 0px;
+    width: 100%;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
 
-background-color: black;
+    background-color: black;
 }
 #menu{
    
     position: absolute;
-width: 95px;
-height: 100px;
-left: 1278px;
-top: 60px;
+    width: 95px;
+    height: 100px;
+    left: 1278px;
+    top: 60px;
 
-font-family: 'RobotoRegular';
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-text-align: right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
 
-color: #FFFFFF;
-list-style: none;
+    color: #FFFFFF;
+    list-style: none;
 }
 
 #logoContainer {
     position: absolute;
     width: 720px;
-    height: 595px;
+    height: 720px;
     left: 370px;
     top: 196px;
-    text-align: center;
-    background-color: cadetblue;
-    object-fit: cover;
- 
+    text-align: center; 
 }
-#logoContainer img {
-    background-image: url(./photos/logo_v4.png);
+#logoContainer div {
+   background-image: url(./photos/logo_v4.png);
    width: 100%;
+   height: 100%;
+   background-size: cover;
 }
 
 #seccion2{
@@ -95,7 +95,137 @@ list-style: none;
     height: 1024px;
     left: 0px;
     top: 1024px;
-    background-color: thistle;
+    background-color:black;
+    
+}
+#marianafoto {
+    position: absolute;
+    width: 214px;
+    height: 214px;
+    left:66px;
+    top: 79px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    ;
+
+}
+#marianafoto div {
+    background-image: url(./photos/marianafoto.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 160px
+    
+}
+#titulomariana{
+    position: absolute;
+    width: 318px;
+    height: 33px;
+    left: 313px;
+    top:78px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
+#textomariana {
+    position: absolute;
+    width: 293px;
+    height: 202px;
+    left: 313px;
+    top: 126px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: white;
+}
+#santifoto {
+    position: absolute;
+    width: 214px;
+    height: 214px;
+    left: 767px;
+    top: 79px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#santifoto div {
+    background-image: url(./photos/santifoto.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 160px;
+}
+#titulosanti {
+    position: absolute;
+    width: 318px;
+    height: 33px;
+    left: 1014px;
+    top: 78px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+#textosanti{
+    position: absolute;
+    width: 293px;
+    height: 204px;
+    left: 1014px;
+    top: 126px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    
+}
+#whatwedo {
+    position: absolute;
+width: 251px;
+height: 274px;
+left: 62px;
+top: 584px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 100px;
+line-height: 80px;
+/* or 80% */
+
+
+color: #FFFFFF;
+}
+#generos{
+    position: absolute;
+width: 318px;
+height: 255px;
+left: 767px;
+top: 581px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+
 }
 #seccion3 {
     position: absolute;
@@ -103,5 +233,5 @@ list-style: none;
     height: 1024px;
     left: 0px;
     top: 2048px;
-    background-color: wheat;
+    background-color: black;
 }
