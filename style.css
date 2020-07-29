@@ -52,7 +52,7 @@ height: 1024px;
 left: 0px;
 top: 0px;
 
-background-color: teal;
+background-color: black;
 }
 #menu{
    
@@ -62,7 +62,7 @@ height: 100px;
 left: 1278px;
 top: 60px;
 
-font-family: 'Roboto';
+font-family: 'RobotoRegular';
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
