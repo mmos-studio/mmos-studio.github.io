@@ -23,43 +23,275 @@
 }
     
 
-body,html {
-    background-color: black;
-    font-family: monospace;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: none;
-    overflow-x:hidden ;
-
+html,body {
+  height: 100%;
 }
 
-
-#container {
-    background-color: black;
-    padding: 0;
+body {
     margin: 0;
-    width: 100%; 
-    height: 100%;
-   overflow: hidden;
+    background-color: black;
+        
+}
+a{
+    text-decoration: none;
     color: white;
+    font-family: 'Roboto';
+    
+}
+a:hover{
+    color: chartreuse;
+}
+.wrapper {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    min-height: 1024px;
+    background-color: black;
+    box-sizing: border-box;
+   
+}
+.inner {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    height: inherit;
+    padding: 0px;
+    
+}
+.top_header {
+    background-color: black;
+    height: 1024px;
+    
+}
+#menu {
+    position: absolute;
+    width: 95px;
+    height: 100px;
+    left: 1278px;
+    top: 60px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+
+    color: #FFFFFF;
+    list-style: none;
+}
+
+#logo_content {
+    width: 512px;
+    height: 512px;
+    margin: 0 auto;
+    top: 256px;
+    position: relative;
+}
+#logo_content img {
+    height: inherit;
+}
+.about {
+    background-color: black;
+    top: 2048px;
+    height: 1024px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+.fotosWrapper {
+    width: 100%;
+    height: 214px;
+    position: relative;
+    
+    top: 79px;
+
+}
+#marianafoto {
+    position: relative;
+    height: 214px;
+    width: 214px;
+    left: 66px;
+    top: ;
+}
+#marianafoto div {
+    background-image: url(./photos/marianafoto.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 160px
+    
+}
+#titulomariana {
+    height: 33px;
+    width: 318px;
+    left: 313px;
+    top: -78px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+#santifoto {
+    position: relative;
+    width: 214px;
+    height: 214px;
+    left: 767px;
+    top: -214px;
+}
+#santifoto div {
+    background-image: url(./photos/santifoto.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 160px
+}
+#titulosanti {
+    height: 33px;
+    width: 318px;
+    left: 1014px;
+    top: -100px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+#whatwedo {
+    position: relative;
+    height: 247px;
+    width: 251px;
+    left: 62px;
+    top: 310px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 80px;
+    color: white;
+}
+#generos {
+    position: relative;
+    height: 255px;
+    width: 318px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    left: 767px;
+    top: 56px;
+    color: white;
+
+}
+.contact {
+    top: 3072px;
+    height: 1024px;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    
+
+}
+#infoEng {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 42px;
+    top: 128px;
+    color: white;
+
+}
+#infoEsp {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 42px;
+    top: 148px;
+    color: white;
+    
+}
+#contactMail {
+
+    height: 50px;
+    width: 300px;
+    position: relative;
+    top: 362px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+}
+.work {
+    top: 0px;
+    height: 1024px;
+    background-color: #EBE946;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    align-items: center;
+}
+#quarantineImage{
+    width: 720px;
+    height: 720px;
+    background-color: black;
+    position: relative;
+    left: 101px;
+    top:160px;
+   
+}
+#quarantineImage div {
+    background-image: url(./photos/quarantine.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.sparkWork{
+    top: 120px;
+    height: 1024px;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* #container {
+   width: 100%;
+   max-width: 120rem;
+   margin: 0 auto;
+   background-color: palegreen;
 }
 #seccion1{
     margin: 0;
     padding: 0;
-    position: absolute;
     width: 100%;
     height: 1024px;
-    left: 0px;
-    top: 0px;
-
-    background-color: black;
+    max-width: 120rem;
+    height: inherit;
+    background-color: orangered;
 }
+#innerContainer{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    height: inherit;
+}
+
+
 #menu{
    
     position: absolute;
-    width: 95px;
+    width: 82px;
     height: 100px;
     left: 1278px;
     top: 60px;
@@ -86,9 +318,8 @@ a:hover{
     position: absolute;
     width: 720px;
     height: 720px;
-    left: 370px;
-    top: 196px;
-    text-align: center; 
+    margin: 0 auto;
+     
 }
 #logoContainer div {
    background-image: url(./photos/logo_v4.png);
@@ -101,9 +332,9 @@ a:hover{
     position: absolute;
     width: 100%;
     height: 1024px;
-    left: 0px;
+    left: calc(50% - 1440px/2);
     top: 1024px;
-    background-color:black;
+    background-color:orange;
     
 }
 #marianafoto {
@@ -204,46 +435,47 @@ a:hover{
 }
 #whatwedo {
     position: absolute;
-width: 251px;
-height: 274px;
-left: 62px;
-top: 584px;
+    width: 251px;
+    height: 274px;
+    left: 62px;
+    top: 584px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 100px;
-line-height: 80px;
-/* or 80% */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 80px;
 
 
-color: #FFFFFF;
+
+    color: #FFFFFF;
 }
 #generos{
     position: absolute;
-width: 318px;
-height: 255px;
-left: 767px;
-top: 581px;
+    width: 318px;
+    height: 255px;
+    left: 767px;
+    top: 581px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 900;
-font-size: 36px;
-line-height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 #seccionContact{
     position: absolute;
     width: 100%;
     height: 1024px;
-    left: 0px;
+    left: calc(50% - 1440px/2);
     top: 2048px;
     vertical-align: center;
     
 }
+
 #infoEng{
     position: absolute;
     width: 410px;
@@ -279,7 +511,7 @@ color: #FFFFFF;
 #contactMail{
     position: absolute;
     top: 512px;
-    left: 86px;
+    left: calc(50% - 1440px/2);
     height: 0px;
     color:white;
     font-family: 'Roboto';
@@ -299,4 +531,4 @@ color: #FFFFFF;
     left: 0px;
     top: 3072px;
     background-color: black;
-}
+} */
