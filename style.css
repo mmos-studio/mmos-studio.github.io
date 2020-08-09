@@ -136,6 +136,20 @@ a:hover{
 
     color: #FFFFFF;
 }
+#textomariana {
+    height: 202px;
+    width: 293px;
+    left: 313px;
+    top: -90px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
 #santifoto {
     position: relative;
     width: 214px;
@@ -164,12 +178,27 @@ a:hover{
 
     color: #FFFFFF;
 }
+#textosanti {
+    height: 202px;
+    width: 293px;
+    left:1014px;
+    top: -282px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+}
 #whatwedo {
     position: relative;
     height: 247px;
     width: 251px;
     left: 62px;
-    top: 310px;
+    top: 0px;
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 100px;
@@ -186,7 +215,7 @@ a:hover{
     font-size: 36px;
     line-height: 42px;
     left: 767px;
-    top: 56px;
+    top: -255px;
     color: white;
 
 }
@@ -256,6 +285,42 @@ a:hover{
     background-size: cover;
     width: 100%;
     height: 100%;
+}
+#tituloDescripcion {
+    width: 318px;
+    height: 271px;
+    left: 1000px;
+    top: -560px;
+    position: relative;
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+#Descripcion{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+    width: 293px;
+    color: black;
+}
+#plusrender {
+    position: relative;
+    width: 62px;
+    height: 37px;
+    left: 1000px;
+    top: -476px;
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+    
 }
 .sparkWork{
     top: 120px;
