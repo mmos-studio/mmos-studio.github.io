@@ -295,8 +295,8 @@ a:hover{
     text-align: left;
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 100px;
+    line-height: 100px;
 }
 #Descripcion{
     font-family: 'Roboto';
@@ -391,10 +391,9 @@ a:hover{
     background-color: #0FC1C2;
 }
 #imagenPackaging {
-    width:858px;
-    height: 858px;
-    top:83px;
-    position: relative;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
 }
 #imagenPackaging div {
     background-image: url(./photos/Gel_4.png);
@@ -413,8 +412,8 @@ a:hover{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 75px;
+    line-height: 75px;
     margin: 0;
 
 }
