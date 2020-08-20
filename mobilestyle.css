@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'MontserratBold';
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face{
+        font-family: 'MontserratRegular';
+        src: url(./fonts/Montserrat-Regular.ttf);
+    }
+@font-face{
+    font-family: 'MontserratBlack';
+    src: url(./fonts/Montserrat-Black.ttf);
+
+}
+@font-face{
+    font-family: 'RobotoRegular';
+    src: url(./fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+    
+    font-family: 'RobotoBold';
+    src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
+    
+ @keyframes colorAnim{
+     from {color: black;}
+     to {color:white;}
+ }
+
+html,body {
+  height: 100%;
+  
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+    animation-name: colorAnim;
+    animation-duration: 2s;
+    
+}
+a:hover{
+    color: chartreuse;
+}
+.wrapper {
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    min-height: 664px;
+    background-color: black;
+    box-sizing: border-box;
+    
+    
+   
+}
+.inner {
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    height: inherit;
+    padding: 0px;
+    background-color: black;
+
+}
+.top_header {
+    background-color: black;
+    height: 664px;
+
+}
+#menu {
+    
+    position: relative;
+    width: 95px;
+    height: 100px;
+    left: 60%;
+    top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: right;
+
+    color: #FFFFFF;
+    list-style: none;
+    
+}
+#logo_content {
+    width: 256px;
+    height: 256px;
+    margin: 0 auto;
+    top: 64px;
+    position: relative;
+    
+}
+#logo_content img {
+    height: inherit;
+    
+}
+.about {
+    background-color: yellow;
+    top: 1328px;
+    height: 1328px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+.fotosWrapper {
+    width: 100%;
+    height: 214px;
+    position: relative;
+    top: 79px;
+
+}
+#marianafoto {
+    position: relative;
+    height: 128px;
+    width: 128px;
+    left: 30px;
+    top: 0px;
+}
+#marianafoto div {
+    background-image: url(./photos/marianafoto.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 160px
+    
+}
+#titulomariana {
+    height: 33px;
+    width: 318px;
+    left: 180px;
+    top: -138px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}#textomariana {
+    height: 202px;
+    width: 193px;
+    left: 180px;
+    top: -158px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 11px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+#santifoto {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    left: 30px;
+    top: 180px;
+}
+#santifoto div {
+    background-image: url(./photos/santifoto.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 160px
+}
+#titulosanti {
+    height: 33px;
+    width: 318px;
+    left: 180px;
+    top: 138px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+#textosanti {
+    height: 202px;
+    width: 193px;
+    left:180px;
+    top: -58px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+}
+#whatwedo {
+    position: relative;
+    height: 251px;
+    width: 251px;
+    left: 25%;
+    top: -74px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 90px;
+    color: white;
+}
+#generos {
+    position: relative;
+    height: 255px;
+    width: 225px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    left: 25%;
+    top: 0px;
+    color: white;
+
+}
+.contact {
+    top: 3072px;
+    height: 464px;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+#infoEng {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 22px;
+    top: 0px;
+    left: 25%;
+    color: white;
+    width: 200px;
+
+}
+#infoEsp {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 22px;
+    top: 48px;
+    color: white;
+    width: 250px;
+    left: 20%;
+    
+}
+#contactMail {
+    position: relative;
+    top: 120px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0 auto;
+    
+    left: 3.5%;
+   
+}.work {
+    height: 664px;
+    background-color: #E9E44D;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    align-items: center;
+}
+#quarantineImage{
+    width: 375px;
+    height: 375px;
+    background-color: black;
+    position: relative;
+    left: 00px;
+}

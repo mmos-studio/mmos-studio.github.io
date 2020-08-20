@@ -22,20 +22,28 @@
     src: url(./fonts/RobotoCondensed-Bold.ttf);
 }
     
+ @keyframes colorAnim{
+     from {color: black;}
+     to {color:white;}
+ }
 
 html,body {
   height: 100%;
+  
 }
 
 body {
     margin: 0;
     background-color: black;
+    
         
 }
 a{
     text-decoration: none;
     color: white;
     font-family: 'Roboto';
+    animation-name: colorAnim;
+    animation-duration: 2s;
     
 }
 a:hover{
@@ -48,6 +56,7 @@ a:hover{
     min-height: 1024px;
     background-color: black;
     box-sizing: border-box;
+    
    
 }
 .inner {
@@ -57,17 +66,20 @@ a:hover{
     height: inherit;
     padding: 0px;
     
+    
 }
 .top_header {
     background-color: black;
     height: 1024px;
     
+    
 }
 #menu {
-    position: absolute;
+    
+    position: relative;
     width: 95px;
     height: 100px;
-    left: 1278px;
+    left: 80%;
     top: 60px;
 
     font-family: 'Roboto';
@@ -79,17 +91,20 @@ a:hover{
 
     color: #FFFFFF;
     list-style: none;
+    
 }
 
 #logo_content {
     width: 512px;
     height: 512px;
     margin: 0 auto;
-    top: 256px;
+    top: 64px;
     position: relative;
+    
 }
 #logo_content img {
     height: inherit;
+    
 }
 .about {
     background-color: black;
@@ -197,8 +212,8 @@ a:hover{
     position: relative;
     height: 247px;
     width: 251px;
-    left: 62px;
-    top: 0px;
+    left: 25%;
+    top: -74px;
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 100px;
